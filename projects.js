@@ -9,7 +9,7 @@ let projectsData = [
         imageAlt: "kenyan prince blog site",
         projectType: "Blog",
         technologies: ["html", "css", "js"],
-        github: "https://github.com/example/taskmanager",
+        github: "https://petergakanga.github.io/kenyanprince/",
         live: "https://taskmanager-demo.com",
         featured: true
     },
@@ -587,4 +587,5 @@ window.ProjectsManager = {
     refreshProjects: () => {
         loadProjects();
     }
+
 };
