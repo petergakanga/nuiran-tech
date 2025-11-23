@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="abd724865fa41cf610051f5d0533fb77_055523.jpg" type="image/png">
+    <title>Peter Gakanga - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <canvas id="particles-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">NUIRAN<span class="accent">.</span>TECH</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#pricing" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                
+                <li><a href="admin.html" class="nav-link admin-link">
+                    <i class="fas fa-cog"></i>
+                    Admin
+                </a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="accent">Peter Gakanga</span>
+                    </h1>
+                    <div class="typing-container">
+                        <span class="typing-text">I create </span>
+                        <span id="typed-text" class="typed-text"></span>
+                        <span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Professional web developer specializing in fast, modern websites with FREE design and SEO optimization. 
+                        I deliver quality work within 6 hours with flexible payment terms.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-code"></i>
+                            View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Get Started Today
+                        </a>
+                    </div>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fas fa-gift"></i>
+                            <span>FREE Web Design</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-search"></i>
+                            <span>FREE SEO Optimization</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <span>6-Hour Delivery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="images\231870751.png" alt="Peter Gakanga" class="profile-photo">
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-icon" data-tech="html">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="floating-icon" data-tech="css">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div class="floating-icon" data-tech="js">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="floating-icon" data-tech="django">
+                                <i class="fab fa-python"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Dedicated web developer focused on delivering exceptional results fast</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <h3>My Approach</h3>
+                        <p>
+                            As a specialized web developer with 2+ years of experience, I focus exclusively on creating 
+                            high-quality websites that deliver results. I believe in providing exceptional value through 
+                            FREE web design and on-page SEO optimization with every project.
+                        </p>
+                        <p>
+                            My commitment is simple: deliver professional websites within 6 hours, with flexible payment 
+                            terms that protect both you and me. I only work on web development projects, ensuring you get 
+                            the expertise and focus you deserve.
+                        </p>
+                        <div class="value-props">
+                            <div class="value-item">
+                                <i class="fas fa-gift"></i>
+                                <span>FREE Landing Page Design</span>
+                            </div>
+                            <div class="value-item">
+                                <i class="fas fa-search-plus"></i>
+                                <span>FREE On-Page SEO</span>
+                            </div>
+                            <div class="value-item">
+                                <i class="fas fa-handshake"></i>
+                                <span>50% Payment After Delivery</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="6">0</div>
+                        <div class="stat-label">Hours Delivery Time</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Web Development Skills</h2>
+                <p class="section-subtitle">Technologies I use to build fast, modern websites</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML5</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS3 & Responsive Design</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript & Fetch API</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend & SEO</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python Django</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Django REST Framework</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>On-Page SEO Optimization</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Recent Web Projects</h2>
+                <p class="section-subtitle">A showcase of my web development work delivered within 6 hours</p>
+            </div>
+
+
+
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be dynamically loaded -->
+                 
+            
+        </div>
+    </section>
+
+    <!-- Services & Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Web Development Services</h2>
+                <p class="section-subtitle">Professional web development with FREE bonuses and flexible payment</p>
+            </div>
+            
+            <!-- Payment Terms Notice -->
+            <div class="payment-terms">
+                <div class="terms-card">
+                    <h3><i class="fas fa-handshake"></i> Flexible Payment Terms</h3>
+                    <p>Pay 50% upfront to start your project, then pay the remaining 50% only after I deliver the work and you approve it. Your satisfaction is guaranteed!</p>
+                </div>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <div class="pricing-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3 class="pricing-title">FREE Landing Page Design</h3>
+                        <div class="pricing-price">
+                            <span class="currency">$</span>
+                            <span class="amount">0</span>
+                            <span class="period">+ development cost</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> FREE Professional Design</li>
+                            <li><i class="fas fa-check"></i> FREE On-Page SEO Optimization</li>
+                            <li><i class="fas fa-check"></i> Responsive Mobile Design</li>
+                            <li><i class="fas fa-check"></i> 6-Hour Delivery Guarantee</li>
+                            <li><i class="fas fa-check"></i> 50% Payment After Approval</li>
+                            <li><i class="fas fa-check"></i> Contact Form Integration</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-btn btn btn-primary">
+                        <i class="fas fa-star"></i>
+                        Start Your Project
+                    </button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="pricing-title">Basic Website</h3>
+                        <div class="pricing-price">
+                            <span class="currency">$</span>
+                            <span class="amount">50</span>
+                            <span class="period">/ project</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Up to 5 Pages</li>
+                            <li><i class="fas fa-check"></i> FREE Design Included</li>
+                            <li><i class="fas fa-check"></i> FREE SEO Optimization</li>
+                            <li><i class="fas fa-check"></i> Mobile Responsive</li>
+                            <li><i class="fas fa-check"></i> 6-Hour Delivery</li>
+                            <li><i class="fas fa-check"></i> 30 Days Support</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-btn btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Get Started
+                    </button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="pricing-title">Advanced Website</h3>
+                        <div class="pricing-price">
+                            <span class="currency">$</span>
+                            <span class="amount">200</span>
+                            <span class="period">/ project</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Custom Web Application</li>
+                            <li><i class="fas fa-check"></i> Django Backend Integration</li>
+                            <li><i class="fas fa-check"></i> FREE Design & SEO</li>
+                            <li><i class="fas fa-check"></i> Database Integration</li>
+                            <li><i class="fas fa-check"></i> 6-Hour Delivery</li>
+                            <li><i class="fas fa-check"></i> 60 Days Support</li>
+                        </ul>
+                    </div>
+                    <button class="pricing-btn btn btn-secondary">
+                        <i class="fas fa-phone"></i>
+                        Contact Me
+                    </button>
+                </div>
+            </div>
+
+            <!-- Additional Services -->
+            <div class="additional-services">
+                <h3 class="services-title">Specialized Web Development Services</h3>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h4>Landing Page Design</h4>
+                        <p>FREE professional design with every project</p>
+                        <span class="service-price">FREE with any project</span>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4>On-Page SEO</h4>
+                        <p>FREE SEO optimization for better rankings</p>
+                        <span class="service-price">FREE with any project</span>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>Responsive Design</h4>
+                        <p>Mobile-first responsive web design</p>
+                        <span class="service-price">Included in all projects</span>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>6-Hour Delivery</h4>
+                        <p>Fast turnaround guaranteed</p>
+                        <span class="service-price">Standard delivery time</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ready to Start Your Project?</h2>
+                <p class="section-subtitle">Get your website with FREE design and SEO - delivered in 6 hours!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="cbbbaebfaeb98caaa0aaa5acaafb8baca6aaa2a7e5a8a4a6">[email&#160;protected]</a></p>
+                        <p>Quick response guaranteed</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>0769890290</p>
+                        <p>Available for project discussions</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>Nakuru, Molo</p>
+                        <p>Kenya</p>
+                    </div>
+                </div>
+
+                <div class="project-process">
+                    <h3>How It Works</h3>
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h4>Contact Me</h4>
+                            <p>Tell me about your project requirements</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h4>50% Payment</h4>
+                            <p>Pay half upfront to start development</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h4>6-Hour Delivery</h4>
+                            <p>Receive your completed website with FREE design & SEO</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h4>Final Payment</h4>
+                            <p>Pay remaining 50% after you approve the work</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Peter Gakanga - Web Developer. All rights reserved.</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="./particles.js"></script>
+    <script src="projects.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
