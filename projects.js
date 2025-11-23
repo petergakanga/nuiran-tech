@@ -10,7 +10,7 @@ let projectsData = [
         projectType: "Blog",
         technologies: ["html", "css", "js"],
         github: "https://petergakanga.github.io/kenyanprince/",
-        live: "https://taskmanager-demo.com",
+        live: "https://petergakanga.github.io/kenyanprince/",
         featured: true
     },
     {
@@ -589,3 +589,4 @@ window.ProjectsManager = {
     }
 
 };
+
